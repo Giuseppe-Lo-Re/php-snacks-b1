@@ -31,7 +31,7 @@ $randomNumbersArray = [];
     </h1>
 
     <!-- Creo un ciclo for per stampare il contenuto dell'array: -->
-    <div>
+    <ul>
         <?php for($i = 0; $i < count($randomNumbersArray); $i++) { ?>
 
             <li>
@@ -39,6 +39,6 @@ $randomNumbersArray = [];
             </li>
 
         <?php } ?>
-    </div>
+    </ul>
 </body>
 </html>
