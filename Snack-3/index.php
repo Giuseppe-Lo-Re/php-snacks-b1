@@ -11,7 +11,7 @@ $randomNumbersArray = [];
         $randomNumber = rand(1, 100);
 
         // lo pusho nell'array se non è già presente:
-        if(!in_array($randomNumbersArray, $randomNumber)) {
+        if(!in_array($randomNumber, $randomNumbersArray)) {
             $randomNumbersArray[] = $randomNumber;
         }
     };
@@ -30,8 +30,15 @@ $randomNumbersArray = [];
         Array con 15 numeri casuali:
     </h1>
 
+    <!-- Creo un ciclo for per stampare il contenuto dell'array: -->
     <div>
-        <?php echo $randomNumbersArray ?>
+        <?php for($i = 0; $i < count($randomNumbersArray); $i++) { ?>
+
+            <li>
+                <?php echo $randomNumbersArray[$i]?>
+            </li>
+
+        <?php } ?>
     </div>
 </body>
 </html>
