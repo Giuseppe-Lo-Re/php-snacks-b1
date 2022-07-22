@@ -59,7 +59,7 @@ mettendo gli insegnanti in un rettangolo grigio e i PM in un rettangolo verde. -
         <?php } ?>
 
     <!-- Creo un ciclo for che scorrerà l'array con indice 'pm': -->
-    <?php For($i = 0; $i < count($db['pm']); $i++) { ?>
+    <?php for($i = 0; $i < count($db['pm']); $i++) { ?>
 
         <div class="pm">
 
